@@ -1,5 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import MainLayout from './layouts/MainLayout'
 import HomePage from './pages/HomePage'
 import FinancePage from './pages/FinancePage'
@@ -26,32 +27,35 @@ import TipCalculator from './calculators/TipCalculator'
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<HomePage />} />
-        <Route path="/finance" element={<FinancePage />} />
-        <Route path="/health" element={<HealthPage />} />
-        <Route path="/converters" element={<ConvertersPage />} />
-        <Route path="/math" element={<MathPage />} />
-        
-        {/* Calculator Routes */}
-        <Route path="/calculator/age" element={<AgeCalculator />} />
-        <Route path="/calculator/bmi" element={<BMICalculator />} />
-        <Route path="/calculator/emi" element={<EMICalculator />} />
-        <Route path="/calculator/sip" element={<SIPCalculator />} />
-        <Route path="/calculator/percentage" element={<PercentageCalculator />} />
-        <Route path="/calculator/profit-loss" element={<ProfitLossCalculator />} />
-        <Route path="/calculator/discount" element={<DiscountCalculator />} />
-        <Route path="/calculator/temperature" element={<TemperatureConverter />} />
-        <Route path="/calculator/length" element={<LengthConverter />} />
-        <Route path="/calculator/weight" element={<WeightConverter />} />
-        <Route path="/calculator/time" element={<TimeConverter />} />
-        <Route path="/calculator/loan-interest" element={<LoanInterestCalculator />} />
-        <Route path="/calculator/currency" element={<CurrencyConverter />} />
-        <Route path="/calculator/gst" element={<GSTCalculator />} />
-        <Route path="/calculator/tip" element={<TipCalculator />} />
-      </Route>
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/finance" element={<FinancePage />} />
+          <Route path="/health" element={<HealthPage />} />
+          <Route path="/converters" element={<ConvertersPage />} />
+          <Route path="/math" element={<MathPage />} />
+          
+          {/* Calculator Routes */}
+          <Route path="/calculator/age" element={<AgeCalculator />} />
+          <Route path="/calculator/bmi" element={<BMICalculator />} />
+          <Route path="/calculator/emi" element={<EMICalculator />} />
+          <Route path="/calculator/sip" element={<SIPCalculator />} />
+          <Route path="/calculator/percentage" element={<PercentageCalculator />} />
+          <Route path="/calculator/profit-loss" element={<ProfitLossCalculator />} />
+          <Route path="/calculator/discount" element={<DiscountCalculator />} />
+          <Route path="/calculator/temperature" element={<TemperatureConverter />} />
+          <Route path="/calculator/length" element={<LengthConverter />} />
+          <Route path="/calculator/weight" element={<WeightConverter />} />
+          <Route path="/calculator/time" element={<TimeConverter />} />
+          <Route path="/calculator/loan-interest" element={<LoanInterestCalculator />} />
+          <Route path="/calculator/currency" element={<CurrencyConverter />} />
+          <Route path="/calculator/gst" element={<GSTCalculator />} />
+          <Route path="/calculator/tip" element={<TipCalculator />} />
+        </Route>
+      </Routes>
+      <Analytics />
+    </>
   )
 }
 
