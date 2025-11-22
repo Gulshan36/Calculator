@@ -31,7 +31,9 @@ export default defineConfig({
       ],
       changefreq: 'weekly',
       priority: 0.8,
-      lastmod: new Date()
+      lastmod: new Date(),
+      readable: true,
+      generateRobotsTxt: true
     })
   ],
   server: {
