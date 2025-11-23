@@ -138,6 +138,84 @@ const HomePage = () => {
           </div>
         )}
       </div>
+
+      {/* SEO Content Section */}
+      <div className="max-w-4xl mx-auto space-y-8 mt-16 text-gray-700 dark:text-gray-300">
+        <section>
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Free Online Calculator Tools for Everyone</h2>
+          <p className="mb-4">
+            Welcome to Universal Calculator Hub, your trusted source for accurate and easy-to-use online calculators. 
+            Whether you're planning your finances, tracking your health, or need quick unit conversions, our comprehensive 
+            suite of 15+ calculators has you covered. All tools are completely free, require no registration, and work 
+            seamlessly on desktop and mobile devices.
+          </p>
+          <p>
+            Our calculators are designed with precision and simplicity in mind. From complex financial calculations like 
+            EMI and SIP to everyday conversions like temperature and weight, we provide instant results with detailed 
+            breakdowns to help you understand the numbers behind your calculations.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Popular Calculators</h2>
+          <div className="space-y-3">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">EMI Calculator</h3>
+              <p>Calculate your Equated Monthly Installment (EMI) for home loans, car loans, or personal loans. 
+              Enter your loan amount, interest rate, and tenure to get instant results with a detailed amortization schedule.</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">BMI Calculator</h3>
+              <p>Check your Body Mass Index (BMI) to understand if you're underweight, normal weight, overweight, or obese. 
+              Our BMI calculator provides health categories and recommendations based on your height and weight.</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">SIP Calculator</h3>
+              <p>Plan your mutual fund investments with our Systematic Investment Plan (SIP) calculator. 
+              See how your monthly investments can grow over time with compound interest and expected returns.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Why Choose Our Calculators?</h2>
+          <ul className="list-disc list-inside space-y-2">
+            <li>100% Free - No hidden charges or premium features</li>
+            <li>Fast & Accurate - Instant calculations with precise formulas</li>
+            <li>Mobile Friendly - Responsive design works on all devices</li>
+            <li>No Registration - Start calculating immediately</li>
+            <li>Privacy Focused - Your data stays on your device</li>
+            <li>Regular Updates - New calculators and features added regularly</li>
+            <li>Dark Mode Support - Comfortable viewing in any lighting</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Calculator Categories</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">Financial Calculators</h3>
+              <p>Make informed financial decisions with our suite of financial calculators including EMI, SIP, 
+              GST, loan interest, profit & loss, and discount calculators.</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">Health Calculators</h3>
+              <p>Monitor your health with BMI calculator and age calculator. Get instant health insights and 
+              track your wellness journey.</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">Unit Converters</h3>
+              <p>Convert between different units effortlessly. Temperature, length, weight, time, and currency 
+              converters available for all your conversion needs.</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">Math Calculators</h3>
+              <p>Solve everyday math problems with percentage calculator and tip calculator. Perfect for 
+              students, professionals, and daily use.</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }
