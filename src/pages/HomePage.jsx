@@ -65,9 +65,9 @@ const HomePage = () => {
   return (
     <>
       <SEO 
-        title="Universal Calculator Hub - 15+ Free Online Calculators | EMI, BMI, SIP & More"
-        description="Free online calculators for EMI, BMI, SIP, GST, Age, Percentage, Currency Converter & more. Fast, accurate calculations for finance, health & conversions. No registration required."
-        keywords="calculator, online calculator, free calculator, EMI calculator, BMI calculator, SIP calculator, GST calculator, percentage calculator, currency converter, age calculator, loan calculator, financial calculator, health calculator, unit converter"
+        title="Free Online Calculators - All in One Calculator Website | Universal Calculator Hub"
+        description="Best free online calculators - EMI, BMI, Age, Loan, SIP, GST, Percentage, Currency Converter & more. Multiple calculators online in one place. Fast, accurate & easy to use calculator tools."
+        keywords="free online calculators, online calculator, calculator website, all in one calculator, multiple calculators online, best calculator tools, universal calculator, calculator, age calculator online, calculate age online, loan calculator, EMI calculator online, mortgage calculator, interest calculator, simple interest calculator, compound interest calculator, percentage calculator, tax calculator online, currency converter online, BMI calculator, body fat calculator, calorie calculator, time difference calculator, date calculator, math calculator online, unit converter online, financial calculator, health calculator, fitness calculator, date of birth calculator, loan payment calculator, days between dates calculator"
         canonicalUrl="/"
       />
       <div className="space-y-12">

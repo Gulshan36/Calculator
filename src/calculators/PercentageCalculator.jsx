@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CalculatorLayout from '../components/CalculatorLayout'
 import { calculatePercentage } from '../utils/calculatorFormulas'
 import { Percent } from 'lucide-react'
+import SEO from '../components/SEO'
 
 /**
  * Percentage Calculator Component
@@ -48,11 +49,18 @@ const PercentageCalculator = () => {
   const labels = getLabels()
 
   return (
-    <CalculatorLayout
-      title="Percentage Calculator"
-      description="Calculate percentages, find what percentage one number is of another, or calculate percentage change."
-      onReset={handleReset}
-      result={result !== null && (
+    <>
+      <SEO 
+        title="Percentage Calculator - Calculate Percentage Online | Math Calculator"
+        description="Free Percentage Calculator Online - Calculate percentages, find what % one number is of another, percentage increase/decrease. Best math calculator for percentage calculations!"
+        keywords="percentage calculator, calculate percentage, math calculator online, percentage calculator online, percentage increase calculator, percentage decrease calculator, find percentage, what percentage calculator, percent calculator, percentage change calculator, online calculator, number calculator"
+        canonicalUrl="/calculator/percentage"
+      />
+      <CalculatorLayout
+        title="Percentage Calculator"
+        description="Calculate percentages, find what percentage one number is of another, or calculate percentage change."
+        onReset={handleReset}
+        result={result !== null && (
         <div className="text-center">
           <div className="text-sm text-gray-600 dark:text-gray-400 mb-2">Result</div>
           <div className="text-5xl font-bold text-primary-700 dark:text-primary-300">
@@ -126,6 +134,7 @@ const PercentageCalculator = () => {
         Calculate
       </button>
     </CalculatorLayout>
+    </>
   )
 }
 

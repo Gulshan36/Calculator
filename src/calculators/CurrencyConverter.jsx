@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import CalculatorLayout from '../components/CalculatorLayout'
 import { DollarSign, RefreshCw } from 'lucide-react'
+import SEO from '../components/SEO'
 
 /**
  * Currency Converter Component
@@ -135,12 +136,19 @@ const CurrencyConverter = () => {
   const getSymbol = (code) => currencies.find(c => c.code === code)?.symbol || code
 
   return (
-    <CalculatorLayout
-      title="Currency Converter"
-      description="Convert between 30+ major world currencies with real-time exchange rates."
-      onReset={handleReset}
-      result={result && (
-        <div className="space-y-4">
+    <>
+      <SEO 
+        title="Currency Converter Online - Convert Currency with Real-Time Rates"
+        description="Free Currency Converter Online - Convert between 30+ world currencies with live exchange rates. Best online currency converter for USD, EUR, INR, GBP & more!"
+        keywords="currency converter online, currency converter, convert currency, exchange rate calculator, money converter, currency calculator, forex converter, USD to INR, EUR to USD, online currency converter, real-time currency converter, best currency converter"
+        canonicalUrl="/calculator/currency"
+      />
+      <CalculatorLayout
+        title="Currency Converter"
+        description="Convert between 30+ major world currencies with real-time exchange rates."
+        onReset={handleReset}
+        result={result && (
+          <div className="space-y-4">
           <div className="text-center">
             <div className="text-sm text-gray-600 dark:text-gray-400 mb-2">Converted Amount</div>
             <div className="text-5xl font-bold text-primary-700 dark:text-primary-300">
@@ -273,6 +281,7 @@ const CurrencyConverter = () => {
 
       {error && <p className="text-amber-600 dark:text-amber-400 text-sm">{error}</p>}
     </CalculatorLayout>
+    </>
   )
 }
 

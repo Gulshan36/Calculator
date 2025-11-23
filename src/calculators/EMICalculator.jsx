@@ -45,9 +45,9 @@ const EMICalculator = () => {
   return (
     <>
       <SEO 
-        title="EMI Calculator - Calculate Loan EMI Online | Home Loan, Car Loan, Personal Loan EMI"
-        description="Free EMI Calculator to calculate your monthly loan installments. Calculate EMI for home loans, car loans, personal loans with interest rate & tenure. Get instant results with amortization schedule."
-        keywords="EMI calculator, loan EMI calculator, home loan EMI, car loan EMI, personal loan EMI, calculate EMI online, EMI calculator India, loan calculator, monthly installment calculator, equated monthly installment"
+        title="EMI Calculator - Loan EMI Calculator Online | Mortgage & Interest Calculator"
+        description="Free Loan EMI Calculator Online - Calculate EMI for home loans, car loans, personal loans & mortgages. Best interest calculator with amortization schedule. Calculate loan payment instantly!"
+        keywords="loan calculator, loan EMI calculator, EMI calculator online, mortgage calculator, interest calculator, loan payment calculator, simple interest calculator, compound interest calculator, EMI calculator, home loan EMI calculator, car loan calculator, personal loan calculator, calculate EMI online, monthly installment calculator, loan repayment calculator, housing loan calculator, education loan calculator, best EMI calculator, free loan calculator"
         canonicalUrl="/calculator/emi"
       />
       <CalculatorLayout

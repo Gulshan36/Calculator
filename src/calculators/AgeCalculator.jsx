@@ -50,9 +50,9 @@ const AgeCalculator = () => {
   return (
     <>
       <SEO 
-        title="Age Calculator - Calculate Your Exact Age Online | Birthday Countdown & Age in Days"
-        description="Free Age Calculator to calculate your exact age in years, months, days, hours & minutes. Find out how many days you've lived and countdown to your next birthday. Calculate age from date of birth instantly!"
-        keywords="age calculator, calculate age, age calculator from date of birth, birthday calculator, age in days calculator, how old am I, exact age calculator, birthday countdown, age calculator online, calculate age in years months days"
+        title="Age Calculator - Calculate Age Online from Date of Birth | Free DOB Calculator"
+        description="Free Age Calculator Online - Calculate your exact age in years, months, days, hours & minutes from date of birth. DOB to age calculator with birthday countdown. Find out how many days you've lived!"
+        keywords="age calculator, age calculator online, calculate age online, date of birth calculator, DOB to age calculator, calculate age from DOB, age calculator from date of birth, birthday calculator, age in days calculator, how old am I, exact age calculator, birthday countdown, time difference calculator, date calculator, days between dates calculator, age difference calculator, calculate age in years months days, free age calculator"
         canonicalUrl="/calculator/age"
       />
       <CalculatorLayout

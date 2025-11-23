@@ -206,9 +206,9 @@ const BMICalculator = () => {
   return (
     <>
       <SEO 
-        title="BMI Calculator - Calculate Body Mass Index Online | Free BMI Calculator with Age & Gender"
-        description="Free BMI Calculator to calculate your Body Mass Index. Check if you're underweight, normal, overweight or obese. Get BMI with age and gender for accurate health assessment. Calculate BMI online now!"
-        keywords="BMI calculator, body mass index calculator, BMI calculator with age, BMI calculator India, calculate BMI online, BMI chart, healthy weight calculator, obesity calculator, BMI for men, BMI for women, free BMI calculator"
+        title="BMI Calculator - Body Mass Index & Fitness Calculator Online | Health Calculator"
+        description="Free BMI Calculator Online - Calculate Body Mass Index with age & gender. Best fitness calculator to check if you're underweight, normal, overweight or obese. Includes body fat calculator features!"
+        keywords="BMI calculator, body fat calculator, calorie calculator, body mass index calculator, BMI calculator with age, calculate BMI online, fitness calculator, health calculator, weight calculator, obesity calculator, BMI chart, healthy weight calculator, BMI for men, BMI for women, ideal weight calculator, body composition calculator, free BMI calculator online"
         canonicalUrl="/calculator/bmi"
       />
       <CalculatorLayout
