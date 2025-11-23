@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CalculatorLayout from '../components/CalculatorLayout'
 import { calculateBMI } from '../utils/calculatorFormulas'
 import { Activity, AlertCircle, CheckCircle, TrendingUp, Heart } from 'lucide-react'
+import SEO from '../components/SEO'
 
 /**
  * BMI Calculator Component
@@ -203,10 +204,17 @@ const BMICalculator = () => {
   }
 
   return (
-    <CalculatorLayout
-      title="BMI Calculator"
-      description="Calculate your Body Mass Index (BMI) to check if you're at a healthy weight for your height."
-      onReset={handleReset}
+    <>
+      <SEO 
+        title="BMI Calculator - Calculate Body Mass Index Online | Free BMI Calculator with Age & Gender"
+        description="Free BMI Calculator to calculate your Body Mass Index. Check if you're underweight, normal, overweight or obese. Get BMI with age and gender for accurate health assessment. Calculate BMI online now!"
+        keywords="BMI calculator, body mass index calculator, BMI calculator with age, BMI calculator India, calculate BMI online, BMI chart, healthy weight calculator, obesity calculator, BMI for men, BMI for women, free BMI calculator"
+        canonicalUrl="/calculator/bmi"
+      />
+      <CalculatorLayout
+        title="BMI Calculator"
+        description="Calculate your Body Mass Index (BMI) to check if you're at a healthy weight for your height."
+        onReset={handleReset}
       result={result && (
         <div className="space-y-6">
           {/* BMI Gauge */}
@@ -465,6 +473,7 @@ const BMICalculator = () => {
         Calculate BMI
       </button>
     </CalculatorLayout>
+    </>
   )
 }
 

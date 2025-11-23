@@ -20,6 +20,7 @@ import {
   TrendingDown
 } from 'lucide-react'
 import CalculatorCard from '../components/CalculatorCard'
+import SEO from '../components/SEO'
 
 const HomePage = () => {
   const [searchQuery, setSearchQuery] = useState('')
@@ -62,11 +63,18 @@ const HomePage = () => {
   ]
 
   return (
-    <div className="space-y-12">
-      {/* Hero Section */}
-      <div className="text-center space-y-4">
-        <div className="flex items-center justify-center mb-4">
-          <Calculator className="w-16 h-16 text-primary-600" />
+    <>
+      <SEO 
+        title="Universal Calculator Hub - 15+ Free Online Calculators | EMI, BMI, SIP & More"
+        description="Free online calculators for EMI, BMI, SIP, GST, Age, Percentage, Currency Converter & more. Fast, accurate calculations for finance, health & conversions. No registration required."
+        keywords="calculator, online calculator, free calculator, EMI calculator, BMI calculator, SIP calculator, GST calculator, percentage calculator, currency converter, age calculator, loan calculator, financial calculator, health calculator, unit converter"
+        canonicalUrl="/"
+      />
+      <div className="space-y-12">
+        {/* Hero Section */}
+        <div className="text-center space-y-4">
+          <div className="flex items-center justify-center mb-4">
+            <Calculator className="w-16 h-16 text-primary-600" />
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
           Universal Calculator Hub
@@ -216,7 +224,8 @@ const HomePage = () => {
           </div>
         </section>
       </div>
-    </div>
+      </div>
+    </>
   )
 }
 

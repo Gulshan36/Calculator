@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CalculatorLayout from '../components/CalculatorLayout'
 import { calculateEMI } from '../utils/calculatorFormulas'
 import { DollarSign } from 'lucide-react'
+import SEO from '../components/SEO'
 
 /**
  * EMI Calculator Component
@@ -42,11 +43,18 @@ const EMICalculator = () => {
   }
 
   return (
-    <CalculatorLayout
-      title="EMI Calculator"
-      description="Calculate your Equated Monthly Installment (EMI) for loans including home loans, car loans, and personal loans."
-      onReset={handleReset}
-      result={result && (
+    <>
+      <SEO 
+        title="EMI Calculator - Calculate Loan EMI Online | Home Loan, Car Loan, Personal Loan EMI"
+        description="Free EMI Calculator to calculate your monthly loan installments. Calculate EMI for home loans, car loans, personal loans with interest rate & tenure. Get instant results with amortization schedule."
+        keywords="EMI calculator, loan EMI calculator, home loan EMI, car loan EMI, personal loan EMI, calculate EMI online, EMI calculator India, loan calculator, monthly installment calculator, equated monthly installment"
+        canonicalUrl="/calculator/emi"
+      />
+      <CalculatorLayout
+        title="EMI Calculator"
+        description="Calculate your Equated Monthly Installment (EMI) for loans including home loans, car loans, and personal loans."
+        onReset={handleReset}
+        result={result && (
         <div className="space-y-6">
           {/* EMI Amount */}
           <div className="text-center pb-4 border-b border-primary-200 dark:border-primary-800">
@@ -233,6 +241,7 @@ const EMICalculator = () => {
         Calculate EMI
       </button>
     </CalculatorLayout>
+    </>
   )
 }
 

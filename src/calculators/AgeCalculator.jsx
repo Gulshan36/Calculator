@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CalculatorLayout from '../components/CalculatorLayout'
 import { calculateAge } from '../utils/calculatorFormulas'
 import { Calendar, Cake } from 'lucide-react'
+import SEO from '../components/SEO'
 
 /**
  * Age Calculator Component
@@ -47,11 +48,18 @@ const AgeCalculator = () => {
   }
 
   return (
-    <CalculatorLayout
-      title="Age Calculator"
-      description="Calculate your exact age in years, months, and days. Find out how many days until your next birthday!"
-      onReset={handleReset}
-      result={result && (
+    <>
+      <SEO 
+        title="Age Calculator - Calculate Your Exact Age Online | Birthday Countdown & Age in Days"
+        description="Free Age Calculator to calculate your exact age in years, months, days, hours & minutes. Find out how many days you've lived and countdown to your next birthday. Calculate age from date of birth instantly!"
+        keywords="age calculator, calculate age, age calculator from date of birth, birthday calculator, age in days calculator, how old am I, exact age calculator, birthday countdown, age calculator online, calculate age in years months days"
+        canonicalUrl="/calculator/age"
+      />
+      <CalculatorLayout
+        title="Age Calculator"
+        description="Calculate your exact age in years, months, and days. Find out how many days until your next birthday!"
+        onReset={handleReset}
+        result={result && (
         <div className="space-y-4">
           <h3 className="text-2xl font-bold text-primary-700 dark:text-primary-300 flex items-center gap-2">
             {result.mode === 'age' ? (
@@ -176,6 +184,7 @@ const AgeCalculator = () => {
         {mode === 'age' ? 'Calculate Age' : 'Calculate Difference'}
       </button>
     </CalculatorLayout>
+    </>
   )
 }
 
